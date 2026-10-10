@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=Application
+Version=1.5.0
+Name=Zip to Text
+GenericName=Archive to Text Converter
+Comment=Pack zips or folders into reconstructable text, including binaries as base64
+Exec=/usr/bin/ziptotext-gui
+TryExec=/usr/bin/ziptotext-gui
+Icon=ziptotext
+Terminal=false
+StartupNotify=true
+StartupWMClass=ZipToText
+Categories=GTK;Utility;FileTools;Archiving;Compression;
+Keywords=zip;text;bundle;archive;convert;restore;utility;accessories;
+MimeType=application/zip;application/x-zip-compressed;
+DBusActivatable=false

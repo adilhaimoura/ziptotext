@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ziptotext"
+version = "1.5.0"
+description = "Pack zip archives or folders into reconstructable text, including images and binaries as base64, and restore them."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Zip to Text"}]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+    "Environment :: X11 Applications",
+    "Topic :: Utilities",
+]
+dependencies = []
+
+[project.scripts]
+ziptotext = "ziptotext.cli:main"
+ziptotext-gui = "ziptotext.gui:main"
+
+[tool.setuptools.packages.find]
+include = ["ziptotext*"]
+
+[tool.setuptools.data-files]
+"share/applications" = ["share/applications/ziptotext.desktop"]
+"share/pixmaps" = ["share/pixmaps/ziptotext.png"]
+"share/icons/hicolor/scalable/apps" = ["share/icons/hicolor/scalable/apps/ziptotext.svg"]
+"share/icons/hicolor/16x16/apps" = ["share/icons/hicolor/16x16/apps/ziptotext.png"]
+"share/icons/hicolor/22x22/apps" = ["share/icons/hicolor/22x22/apps/ziptotext.png"]
+"share/icons/hicolor/24x24/apps" = ["share/icons/hicolor/24x24/apps/ziptotext.png"]
+"share/icons/hicolor/32x32/apps" = ["share/icons/hicolor/32x32/apps/ziptotext.png"]
+"share/icons/hicolor/48x48/apps" = ["share/icons/hicolor/48x48/apps/ziptotext.png"]
+"share/icons/hicolor/64x64/apps" = ["share/icons/hicolor/64x64/apps/ziptotext.png"]
+"share/icons/hicolor/128x128/apps" = ["share/icons/hicolor/128x128/apps/ziptotext.png"]
+"share/icons/hicolor/256x256/apps" = ["share/icons/hicolor/256x256/apps/ziptotext.png"]
